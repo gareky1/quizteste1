@@ -65,9 +65,13 @@ function nextQuestion(question_number) {
 
   var el = document.getElementById("question-" + question_number);
   var el2 = document.getElementById("question-" + current_question_number);
+  var el3 = document.getElementById("img-" + question_number);
+  var el4 = document.getElementById("img-" + current_question_number);
 
   el.style.display = "block";
   el2.style.display = "none";
+  el3.style.display = "block";
+  el4.style.display = "none";
 }
 
 submit1.addEventListener("click", function () {
@@ -76,8 +80,9 @@ submit1.addEventListener("click", function () {
 });
 submit2.addEventListener("click", function () {
   nextQuestion(3);
-  growProgressBar("60%");
+  growProgressBar("40%");
 });
+
 submit3.addEventListener("click", function () {
   nextQuestion(4);
   growProgressBar("80%");
@@ -86,6 +91,7 @@ submit4.addEventListener("click", function () {
   nextQuestion(5);
   growProgressBar("100%");
 });
+
 submit5.addEventListener("click", function () {
   nextQuestion(6);
 });
