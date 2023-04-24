@@ -44,9 +44,9 @@ function totalScore() {
 
 function getInfoBasedOnScore() {
   if (totalScore() < 3) {
-    var score_info = "Você precisa tomar mais cuidado com a segurança!";
+    var score_info = "Você precisa estudar mais sobre Termodinamica!";
   } else if (totalScore() > 2) {
-    var score_info = "Parabéns! Você está bem de segurança!";
+    var score_info = "Parabéns! Você está sabendo bem sobre Termodinamica!!";
   }
 
   return score_info;
